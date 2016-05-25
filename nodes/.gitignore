@@ -1,0 +1,4 @@
+# Nodes are considered local in this setup, ignore them
+*
+# Don't ignore gitignore
+!.gitignore
