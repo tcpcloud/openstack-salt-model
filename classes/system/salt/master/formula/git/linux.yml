@@ -10,7 +10,7 @@ parameters:
               revision: ${_param:salt_formula_branch}
             git:
               source: git
-              address: 'https://github.com/tcpcloud/salt-formula-salt.git'
+              address: 'https://github.com/tcpcloud/salt-formula-git.git'
               revision: ${_param:salt_formula_branch}
             iptables:
               source: git
