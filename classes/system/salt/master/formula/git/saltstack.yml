@@ -1,0 +1,27 @@
+iparameters:
+  salt:
+    master:
+      environment:
+        dev:
+          formula:
+            git:
+              source: git
+              address: 'https://github.com/tcpcloud/salt.git.git'
+              revision: ${_param:salt_formula_branch}
+            linux:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-linux.git'
+              revision: ${_param:salt_formula_branch}
+            openssh:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-openssh.git'
+              revision: ${_param:salt_formula_branch}
+            reclass:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-reclass.git'
+              revision: ${_param:salt_formula_branch}
+            salt:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-salt.git'
+              revision: ${_param:salt_formula_branch}
+

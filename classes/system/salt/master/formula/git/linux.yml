@@ -1,0 +1,35 @@
+parameters:
+  salt:
+    master:
+      environment:
+        dev:
+          formula:
+            collectd:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-collectd.git'
+              revision: ${_param:salt_formula_branch}
+            git:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-salt.git'
+              revision: ${_param:salt_formula_branch}
+            iptables:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-iptables.git'
+              revision: ${_param:salt_formula_branch}
+            linux:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-linux.git'
+              revision: ${_param:salt_formula_branch}
+            ntp:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-ntp.git'
+              revision: ${_param:salt_formula_branch}
+            openssh:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-openssh.git'
+              revision: ${_param:salt_formula_branch}
+            backupninja:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-backupninja.git'
+              revision: ${_param:salt_formula_branch}
+

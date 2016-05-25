@@ -1,0 +1,18 @@
+parameters:
+  salt:
+    master:
+      environment:
+        dev:
+          formula:
+            apache:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-apache.git'
+              revision: ${_param:salt_formula_branch}
+            graphite:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-graphite.git'
+              revision: ${_param:salt_formula_branch}
+            postgresql:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-postgresql.git'
+              revision: ${_param:salt_formula_branch}

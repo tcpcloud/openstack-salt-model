@@ -2,3 +2,7 @@ nodes/_generated/
 nodes/_generated/*
 classes/service/
 classes/service/*
+
+# Vim .swp files
+.*.swp
+

@@ -1,0 +1,18 @@
+parameters:
+  salt:
+    master:
+      environment:
+        dev:
+          formula:
+            rabbitmq:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-rabbitmq.git'
+              revision: ${_param:salt_formula_branch}
+            redis:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-redis.git'
+              revision: ${_param:salt_formula_branch}
+            sensu:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-sensu.git'
+              revision: ${_param:salt_formula_branch}

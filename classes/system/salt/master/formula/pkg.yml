@@ -1,0 +1,8 @@
+classes:
+- system.salt.master.formula.pkg.graphite
+- system.salt.master.formula.pkg.linux
+- system.salt.master.formula.pkg.openstack_core
+- system.salt.master.formula.pkg.saltstack
+- system.salt.master.formula.pkg.sensu
+- system.salt.master.formula.pkg.heka
+

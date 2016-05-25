@@ -1,0 +1,94 @@
+parameters:
+  salt:
+    master:
+      environment:
+        dev:
+          formula:
+            ceilometer:
+              source: git
+              address: 'https://github.com/openstack/salt-formula-ceilometer.git'
+              revision: ${_param:salt_formula_branch}
+            cinder:
+              source: git
+              address: 'https://github.com/openstack/salt-formula-cinder.git'
+              revision: ${_param:salt_formula_branch}
+            galera:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-galera.git'
+              revision: ${_param:salt_formula_branch}
+            glance:
+              source: git
+              address: 'https://github.com/openstack/salt-formula-glance.git'
+              revision: ${_param:salt_formula_branch}
+            haproxy:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-haproxy.git'
+              revision: ${_param:salt_formula_branch}
+            heat:
+              source: git
+              address: 'https://github.com/openstack/salt-formula-heat.git'
+              revision: ${_param:salt_formula_branch}
+            horizon:
+              source: git
+              address: 'https://github.com/openstack/salt-formula-horizon.git'
+              revision: ${_param:salt_formula_branch}
+            keepalived:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-keepalived.git'
+              revision: ${_param:salt_formula_branch}
+            keystone:
+              source: git
+              address: 'https://github.com/openstack/salt-formula-keystone.git'
+              revision: ${_param:salt_formula_branch}
+            memcached:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-memcached.git'
+              revision: ${_param:salt_formula_branch}
+            mongodb:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-mongodb.git'
+              revision: ${_param:salt_formula_branch}
+            mysql:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-mysql.git'
+              revision: ${_param:salt_formula_branch}
+            neutron:
+              source: git
+              address: 'https://github.com/openstack/salt-formula-neutron.git'
+              revision: ${_param:salt_formula_branch}
+            nginx:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-nginx.git'
+              revision: ${_param:salt_formula_branch}
+            nova:
+              source: git
+              address: 'https://github.com/openstack/salt-formula-nova.git'
+              revision: ${_param:salt_formula_branch}
+            opencontrail:
+              source: git
+              address: 'https://github.com/openstack/salt-formula-opencontrail.git'
+              revision: ${_param:salt_formula_branch}
+            python:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-python.git'
+              revision: ${_param:salt_formula_branch}
+            rabbitmq:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-rabbitmq.git'
+              revision: ${_param:salt_formula_branch}
+            supervisor:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-supervisor.git'
+              revision: ${_param:salt_formula_branch}
+            glusterfs:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-glusterfs.git'
+              revision: ${_param:salt_formula_branch}
+            mysql:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-mysql.git'
+              revision: ${_param:salt_formula_branch}
+            openvstorage:
+              source: git
+              address: 'https://github.com/tcpcloud/salt-formula-openvstorage.git'
+              revision: ${_param:salt_formula_branch}

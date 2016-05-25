@@ -1,0 +1,8 @@
+classes:
+- system.salt.master.formula.git.graphite
+- system.salt.master.formula.git.linux
+- system.salt.master.formula.git.openstack_core
+- system.salt.master.formula.git.saltstack
+- system.salt.master.formula.git.sensu
+- system.salt.master.formula.git.heka
+
