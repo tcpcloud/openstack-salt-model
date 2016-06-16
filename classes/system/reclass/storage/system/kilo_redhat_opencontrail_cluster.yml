@@ -10,6 +10,7 @@ parameters:
           - system.openstack.proxy.cluster
           params:
             salt_master_host: ${_param:reclass_config_master}
+            openstack_version: kilo
             single_address: 10.10.10.204
         control01.openstack-ha.local:
           name: control01
@@ -21,6 +22,7 @@ parameters:
           - system.linux.system.lowmem
           params:
             salt_master_host: ${_param:reclass_config_master}
+            openstack_version: kilo
             single_address: 10.10.10.201
             keepalived_vip_interface: eth0
             keepalived_vip_priority: 103
@@ -37,6 +39,7 @@ parameters:
           - system.linux.system.lowmem
           params:
             salt_master_host: ${_param:reclass_config_master}
+            openstack_version: kilo
             single_address: 10.10.10.202
             keepalived_vip_interface: eth0
             keepalived_vip_priority: 102
@@ -53,6 +56,7 @@ parameters:
           - system.linux.system.lowmem
           params:
             salt_master_host: ${_param:reclass_config_master}
+            openstack_version: kilo
             single_address: 10.10.10.203
             keepalived_vip_interface: eth0
             keepalived_vip_priority: 101
@@ -67,6 +71,7 @@ parameters:
           - system.openstack.compute.cluster
           params:
             salt_master_host: ${_param:reclass_config_master}
+            openstack_version: kilo
             single_address: 10.10.10.211
             opencontrail_compute_address: 10.10.10.211
             opencontrail_compute_gateway: 10.10.10.254
@@ -79,6 +84,7 @@ parameters:
           - system.openstack.compute.cluster
           params:
             salt_master_host: ${_param:reclass_config_master}
+            openstack_version: kilo
             single_address: 10.10.10.212
             opencontrail_compute_address: 10.10.10.212
             opencontrail_compute_gateway: 10.10.10.254

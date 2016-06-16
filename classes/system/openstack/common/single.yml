@@ -7,6 +7,7 @@ parameters:
     cluster_public_host: _
     graphite_secret_key: password
     carbon_message_queue_host: ${_param:single_address}
+    openstack_version: kilo
     opencontrail_version: 2.2
     opencontrail_compute_dns: 8.8.8.8
     opencontrail_stats_password: password
@@ -15,19 +16,19 @@ parameters:
     rabbitmq_admin_password: password
     rabbitmq_openstack_password: password
     rabbitmq_cold_password: password
-    glance_version: kilo
+    glance_version: ${_param:openstack_version}
     glance_service_host: ${_param:single_address}
-    keystone_version: kilo
+    keystone_version: ${_param:openstack_version}
     keystone_service_host: ${_param:single_address}
-    heat_version: kilo
+    heat_version: ${_param:openstack_version}
     heat_service_host: ${_param:single_address}
     heat_domain_admin_password: password
-    cinder_version: kilo
+    cinder_version: ${_param:openstack_version}
     cinder_service_host: ${_param:single_address}
-    nova_version: kilo
+    nova_version: ${_param:openstack_version}
     nova_service_host: ${_param:single_address}
     nova_vncproxy_url: http://${_param:single_address}:8060
-    neutron_version: kilo
+    neutron_version: ${_param:openstack_version}
     neutron_service_host: ${_param:single_address}
     glusterfs_service_host: ${_param:single_address}
     mysql_admin_user: root
